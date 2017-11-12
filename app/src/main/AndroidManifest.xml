@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hp.technicalfest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student" />
+        <activity android:name=".CoordinatorMainActivity" />
+        <activity android:name=".CoordinatorLogin" />
+        <activity android:name=".CoreCommiteeLogin" />
+        <activity android:name=".CoreCommitteeMainActivity" />
+        <activity android:name=".AddEvent" />
+        <activity android:name=".RegisterEventsStudent" />
+        <activity android:name=".CoordiantorViewParticipants" />
+        <activity android:name=".CloseEvents" />
+        <activity android:name=".CoreCommitteeParticipants" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".SMainActivity" />
+        <activity android:name=".SLoginActivity" />
+        <activity android:name=".SRegisterActivity" />
+        <activity android:name=".temp" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".AddCoordinator" />
+    </application>
+
+</manifest>
